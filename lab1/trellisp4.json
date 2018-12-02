@@ -1,33 +1,4 @@
 {
-    "ports" : {
-        "device:bmv2:s204/3" : {
-            "interfaces" : [
-                {
-                    "name": "h1",
-                    "ips" : [ "10.0.2.254/24" ],
-                    "vlan-untagged": 10
-                }
-            ]
-        },
-        "device:bmv2:s204/4" : {
-            "interfaces" : [
-                {
-                    "name": "h2",
-                    "ips" : [ "10.0.2.254/24" ],
-                    "vlan-tagged": [10]
-                }
-            ]
-        },
-        "device:bmv2:s205/3" : {
-            "interfaces" : [
-                {
-                    "name": "h3",
-                    "ips" : [ "10.0.3.254/24" ],
-                    "vlan-untagged": 20
-                }
-            ]
-        }
-    },
     "devices" : {
         "device:bmv2:s204" : {
             "segmentrouting" : {
@@ -70,6 +41,33 @@
             }
         }
     },
-    "apps" : {
+    "ports" : {
+        "device:bmv2:s204/3" : {
+            "interfaces" : [
+                {
+                    "name": "if1",
+                    "ips" : [ "10.0.100.254/24" ],
+                    "vlan-untagged": 100
+                }
+            ]
+        },
+        "device:bmv2:s204/4" : {
+            "interfaces" : [
+                {
+                    "name": "if2",
+                    "ips" : [ "10.0.100.254/24" ],
+                    "vlan-tagged": [100]
+                }
+            ]
+        },
+        "device:bmv2:s205/3" : {
+            "interfaces" : [
+                {
+                    "name": "if3",
+                    "ips" : [ "10.0.200.254/24" ],
+                    "vlan-untagged": 200
+                }
+            ]
+        }
     }
 }
