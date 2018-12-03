@@ -38,18 +38,13 @@ class Trellis(Topo):
         self.addLink(s227, s204)
         self.addLink(s227, s205)
 
-        # NOTE avoid using 10.0.1.0/24 which is the default subnet of quaggas
-        # NOTE avoid using 00:00:00:00:00:xx which is the default mac of host
-        # behind upstream router
         # IPv4 Hosts
-
         # VLAN 100
         h1 = self.addHost('h1', cls=RoutedHost, mac='00:aa:00:00:00:01',
                           ips=['10.0.100.1/24'], gateway='10.0.100.254')
         h2 = self.addHost('h2', cls=TaggedRoutedHost, mac='00:aa:00:00:00:02',
                           ips=['10.0.100.2/24'], gateway='10.0.100.254',
                           vlan=100)
-
         # VLAN 200
         h3 = self.addHost('h3', cls=RoutedHost, mac='00:aa:00:00:00:03',
                           ips=['10.0.200.3/24'], gateway='10.0.200.254')

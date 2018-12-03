@@ -1,0 +1,258 @@
+{
+  "devices": {
+    "device:bmv2:s204": {
+      "piPipeconf": {
+        "piPipeconfId": "org.onosproject.pipelines.fabric-spgw"
+      },
+      "segmentrouting": {
+        "name": "s204",
+        "ipv4NodeSid": 204,
+        "ipv4Loopback": "192.168.0.204",
+        "routerMac": "00:00:00:00:02:04",
+        "isEdgeRouter": true,
+        "adjacencySids": []
+      },
+      "ports": {
+        "1": {
+          "name": "s204-eth1",
+          "speed": 10000,
+          "enabled": true,
+          "number": 1,
+          "removed": false,
+          "type": "copper"
+        },
+        "2": {
+          "name": "s204-eth2",
+          "speed": 10000,
+          "enabled": true,
+          "number": 2,
+          "removed": false,
+          "type": "copper"
+        },
+        "3": {
+          "name": "s204-eth3",
+          "speed": 10000,
+          "enabled": true,
+          "number": 3,
+          "removed": false,
+          "type": "copper"
+        }
+      },
+      "generalprovider": {
+        "p4runtime": {
+          "ip": "127.0.0.1",
+          "deviceKeyId": "p4runtime:device:bmv2:s204",
+          "port": 50204,
+          "deviceId": 1
+        }
+      },
+      "basic": {
+        "driver": "bmv2",
+        "name": "s204",
+        "gridX": -200.0,
+        "gridY": 400.0,
+        "locType": "grid"
+      }
+    },
+    "device:bmv2:s205": {
+      "piPipeconf": {
+        "piPipeconfId": "org.onosproject.pipelines.fabric"
+      },
+      "segmentrouting": {
+        "name": "s205",
+        "ipv4NodeSid": 205,
+        "ipv4Loopback": "192.168.0.205",
+        "routerMac": "00:00:00:00:02:05",
+        "isEdgeRouter": true,
+        "adjacencySids": []
+      },
+      "ports": {
+        "1": {
+          "name": "s205-eth1",
+          "speed": 10000,
+          "enabled": true,
+          "number": 1,
+          "removed": false,
+          "type": "copper"
+        },
+        "2": {
+          "name": "s205-eth2",
+          "speed": 10000,
+          "enabled": true,
+          "number": 2,
+          "removed": false,
+          "type": "copper"
+        },
+        "3": {
+          "name": "s205-eth3",
+          "speed": 10000,
+          "enabled": true,
+          "number": 3,
+          "removed": false,
+          "type": "copper"
+        }
+      },
+      "generalprovider": {
+        "p4runtime": {
+          "ip": "127.0.0.1",
+          "deviceKeyId": "p4runtime:device:bmv2:s205",
+          "port": 50205,
+          "deviceId": 1
+        }
+      },
+      "basic": {
+        "driver": "bmv2",
+        "name": "s205",
+        "gridX": 200.0,
+        "gridY": 400.0,
+        "locType": "grid"
+      }
+    },
+    "device:bmv2:s226": {
+      "piPipeconf": {
+        "piPipeconfId": "org.onosproject.pipelines.fabric"
+      },
+      "segmentrouting": {
+        "name": "s226",
+        "ipv4NodeSid": 226,
+        "ipv4Loopback": "192.168.0.226",
+        "routerMac": "00:00:00:00:02:26",
+        "isEdgeRouter": false,
+        "adjacencySids": []
+      },
+      "ports": {
+        "1": {
+          "name": "s226-eth1",
+          "speed": 10000,
+          "enabled": true,
+          "number": 1,
+          "removed": false,
+          "type": "copper"
+        },
+        "2": {
+          "name": "s226-eth2",
+          "speed": 10000,
+          "enabled": true,
+          "number": 2,
+          "removed": false,
+          "type": "copper"
+        }
+      },
+      "generalprovider": {
+        "p4runtime": {
+          "ip": "127.0.0.1",
+          "deviceKeyId": "p4runtime:device:bmv2:s226",
+          "port": 50226,
+          "deviceId": 1
+        }
+      },
+      "basic": {
+        "driver": "bmv2",
+        "name": "s226",
+        "gridX": -200.0,
+        "gridY": 200.0,
+        "locType": "grid"
+      }
+    },
+    "device:bmv2:s227": {
+      "piPipeconf": {
+        "piPipeconfId": "org.onosproject.pipelines.fabric"
+      },
+      "segmentrouting": {
+        "name": "s227",
+        "ipv4NodeSid": 227,
+        "ipv4Loopback": "192.168.0.227",
+        "routerMac": "00:00:00:00:02:27",
+        "isEdgeRouter": false,
+        "adjacencySids": []
+      },
+      "ports": {
+        "1": {
+          "name": "s227-eth1",
+          "speed": 10000,
+          "enabled": true,
+          "number": 1,
+          "removed": false,
+          "type": "copper"
+        },
+        "2": {
+          "name": "s227-eth2",
+          "speed": 10000,
+          "enabled": true,
+          "number": 2,
+          "removed": false,
+          "type": "copper"
+        }
+      },
+      "generalprovider": {
+        "p4runtime": {
+          "ip": "127.0.0.1",
+          "deviceKeyId": "p4runtime:device:bmv2:s227",
+          "port": 50227,
+          "deviceId": 1
+        }
+      },
+      "basic": {
+        "driver": "bmv2",
+        "name": "s227",
+        "gridX": 200.0,
+        "gridY": 200.0,
+        "locType": "grid"
+      }
+    }
+  },
+  "hosts": {
+    "00:AA:00:00:00:01/None": {
+      "basic": {
+        "name": "eNodeB",
+        "gridX": -300,
+        "gridY": 500,
+        "locType": "grid",
+        "ips": [
+          "10.0.100.1"
+        ],
+        "locations": [
+          "device:bmv2:s204/3"
+        ]
+      }
+    },
+    "00:AA:00:00:00:02/None": {
+      "basic": {
+        "name": "PDN",
+        "gridX": 300,
+        "gridY": 500,
+        "locType": "grid",
+        "ips": [
+          "10.0.200.1"
+        ],
+        "locations": [
+          "device:bmv2:s205/3"
+        ]
+      }
+    }
+  },
+  "ports": {
+    "device:bmv2:s204/3": {
+      "interfaces": [
+        {
+          "name": "if-enodeb",
+          "ips": [
+            "10.0.100.254/24"
+          ],
+          "vlan-untagged": 100
+        }
+      ]
+    },
+    "device:bmv2:s205/3": {
+      "interfaces": [
+        {
+          "name": "if-pdn",
+          "ips": [
+            "10.0.200.254/24"
+          ],
+          "vlan-untagged": 200
+        }
+      ]
+    }
+  }
+}
