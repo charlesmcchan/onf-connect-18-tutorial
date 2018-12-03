@@ -76,6 +76,19 @@
           "vlan-untagged": 200
         }
       ]
+    },
+    "device:bmv2:s205/4": {
+      "interfaces": [
+        {
+          "name": "if4",
+          "ips": [
+            "10.0.200.254/24"
+          ],
+          "vlan-tagged": [
+            200
+          ]
+        }
+      ]
     }
   }
 }
