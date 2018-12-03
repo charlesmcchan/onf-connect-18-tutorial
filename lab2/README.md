@@ -1,6 +1,6 @@
 # Trellis+P4 Tutorial Lab 2 - GTP encapsulation
 
-The goal of this exercise is to learn how to configure Trellis to encapsulate
+The goal of this exercise is to learn how to configure Trellis and fabric.p4 to encapsulate
 packets using the GTP header as in a mobile Serving and Packet Gateway (S/PGW).
 
 ## Topology
