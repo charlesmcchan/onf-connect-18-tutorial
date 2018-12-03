@@ -33,4 +33,7 @@ def print_pkt(pkt):
           % (pkt_count, len(pkt), ipSrc, ipDst, gtp)
 
 
+print "Will print a line for every UDP packet to IP %s or %s..." \
+      % (ENODEB_ADDR, UE_ADDR)
+
 sniff(iface=INTF, count=0, store=False, prn=lambda x: print_pkt(x))

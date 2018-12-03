@@ -13,7 +13,7 @@ by executing the following command:
 
     ```
     $ cd $ONOS_ROOT
-    $ export ONOS_APPS=segmentrouting,drivers.bmv2,pipelines.fabric,lldpprovider,hostprovider
+    $ export ONOS_APPS=segmentrouting,drivers.bmv2,pipelines.fabric,lldpprovider,hostprovider,netcfghostprovider
     $ ok clean
     ```
 
@@ -62,7 +62,6 @@ running**.
         Make sure you see the following list of apps displayed:
 
         ```
-        FIXME: update apps
         * ... org.onosproject.route-service         ... Route Service Server
         * ... org.onosproject.drivers               ... Default Drivers
         * ... org.onosproject.lldpprovider          ... LLDP Link Provider
@@ -77,6 +76,7 @@ running**.
         * ... org.onosproject.mcast                 ... Multicast traffic control
         * ... org.onosproject.segmentrouting        ... Segment Routing
         * ... org.onosproject.pipelines.basic       ... Basic Pipelines
+        * ... org.onosproject.netcfghostprovider    ... Network Config Host Provider
         * ... org.onosproject.pipelines.fabric      ... Fabric Pipeline
         * ... org.onosproject.drivers.bmv2          ... BMv2 Drivers
         ```
@@ -99,9 +99,9 @@ running**.
 
         ```
         onos> interfaces
-        if1: port=device:bmv2:s204/3 ips=[10.0.100.10054/24] mac=00:00:00:00:02:04 vlanUntagged=100
-        if2: port=device:bmv2:s204/4 ips=[10.0.100.10054/24] mac=00:00:00:00:02:04 vlanTagged=[100]
-        if3: port=device:bmv2:s205/3 ips=[10.0.10000.10054/24] mac=00:00:00:00:02:05 vlanUntagged=200
+        if1: port=device:bmv2:s204/3 ips=[10.0.100.254/24] mac=00:00:00:00:02:04 vlanUntagged=100
+        if2: port=device:bmv2:s204/4 ips=[10.0.100.254/24] mac=00:00:00:00:02:04 vlanTagged=[100]
+        if3: port=device:bmv2:s205/3 ips=[10.0.200.254/24] mac=00:00:00:00:02:05 vlanUntagged=200
         ```
 
 4. (optional) **Change flow rule polling interval**. Run the following
@@ -299,7 +299,8 @@ update the network config:
         same subnet, for example you can choose `10.0.200.254/24`.
 
     3. If you struggle to make it work, please ask the instructors for help.
-    Alternatively, you can find the solution in `trellisp4-solution.json`.
+    Alternatively, you can find the solution in
+    [solution/trellisp4.json](solution/trellisp4.json).
     
     4. Follow commands of step 7 to have ONOS discover host 4 (via `arping`).
     

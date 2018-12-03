@@ -22,8 +22,8 @@
             "actionId": "FabricIngress.spgw_ingress.set_dl_sess_info",
             "actionParams": {
               "teid": "BEEF",
-              "s1u_enb_addr": "0A006401",
-              "s1u_sgw_addr": "01020304"
+              "s1u_enb_addr": "0a006401",
+              "s1u_sgw_addr": "0a0064fe"
             }
           }
         ]
