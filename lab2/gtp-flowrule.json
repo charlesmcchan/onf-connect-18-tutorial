@@ -10,7 +10,7 @@
         "criteria": [
           {
             "type": "IPV4_DST",
-            "ip": "17.0.0.1/32"
+            "ip": "0.0.0.0/32"
           }
         ]
       },
@@ -22,7 +22,7 @@
             "actionId": "FabricIngress.spgw_ingress.set_dl_sess_info",
             "actionParams": {
               "teid": "BEEF",
-              "s1u_enb_addr": "006401",
+              "s1u_enb_addr": "0A006401",
               "s1u_sgw_addr": "01020304"
             }
           }

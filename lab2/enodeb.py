@@ -29,7 +29,7 @@ def print_pkt(pkt):
     else:
         gtp = "FALSE :("
 
-    print "[%d] Received packet of %d bytes: ipSrc=%s -> ipDst=%s, gtpHeader=%s" \
+    print "[%d] Received packet of %d bytes: %s -> %s, gtpEncap=%s" \
           % (pkt_count, len(pkt), ipSrc, ipDst, gtp)
 
 
