@@ -1,12 +1,15 @@
 #!/usr/bin/python
 
 import argparse
+import sys
 
 from mininet.cli import CLI
 from mininet.log import setLogLevel
 from mininet.net import Mininet
 from mininet.node import RemoteController
 from mininet.topo import Topo
+
+sys.path.append('..')
 
 from utils.bmv2 import ONOSBmv2Switch
 from utils.routinglib import RoutedHost
@@ -39,14 +42,20 @@ class Trellis(Topo):
         # NOTE avoid using 00:00:00:00:00:xx which is the default mac of host
         # behind upstream router
         # IPv4 Hosts
+
+        # VLAN 100
         h1 = self.addHost('h1', cls=RoutedHost, mac='00:aa:00:00:00:01',
                           ips=['10.0.100.1/24'], gateway='10.0.100.254')
         h2 = self.addHost('h2', cls=TaggedRoutedHost, mac='00:aa:00:00:00:02',
-                          ips=['10.0.100.2/24'], gateway='10.0.100.254', vlan=100)
+                          ips=['10.0.100.2/24'], gateway='10.0.100.254',
+                          vlan=100)
+
+        # VLAN 200
         h3 = self.addHost('h3', cls=RoutedHost, mac='00:aa:00:00:00:03',
-                          ips=['10.0.200.1/24'], gateway='10.0.200.254')
+                          ips=['10.0.200.3/24'], gateway='10.0.200.254')
         h4 = self.addHost('h4', cls=TaggedRoutedHost, mac='00:aa:00:00:00:04',
-                          ips=['10.0.200.2/24'], gateway='10.0.200.254', vlan=200)
+                          ips=['10.0.200.4/24'], gateway='10.0.200.254',
+                          vlan=200)
 
         self.addLink(h1, s204)
         self.addLink(h2, s204)

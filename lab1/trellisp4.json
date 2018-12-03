@@ -1,73 +1,81 @@
 {
-    "devices" : {
-        "device:bmv2:s204" : {
-            "segmentrouting" : {
-                "name" : "s204",
-                "ipv4NodeSid" : 204,
-                "ipv4Loopback" : "192.168.0.204",
-                "routerMac" : "00:00:00:00:02:04",
-                "isEdgeRouter" : true,
-                "adjacencySids" : []
-            }
-        },
-        "device:bmv2:s205" : {
-            "segmentrouting" : {
-                "name" : "s205",
-                "ipv4NodeSid" : 205,
-                "ipv4Loopback" : "192.168.0.205",
-                "routerMac" : "00:00:00:00:02:05",
-                "isEdgeRouter" : true,
-                "adjacencySids" : []
-            }
-        },
-        "device:bmv2:s226" : {
-            "segmentrouting" : {
-                "name" : "s226",
-                "ipv4NodeSid" : 226,
-                "ipv4Loopback" : "192.168.0.226",
-                "routerMac" : "00:00:00:00:02:26",
-                "isEdgeRouter" : false,
-                "adjacencySids" : []
-            }
-        },
-        "device:bmv2:s227" : {
-            "segmentrouting" : {
-                "name" : "s227",
-                "ipv4NodeSid" : 227,
-                "ipv4Loopback" : "192.168.0.227",
-                "routerMac" : "00:00:00:00:02:27",
-                "isEdgeRouter" : false,
-                "adjacencySids" : []
-            }
-        }
+  "devices": {
+    "device:bmv2:s204": {
+      "segmentrouting": {
+        "name": "s204",
+        "ipv4NodeSid": 204,
+        "ipv4Loopback": "192.168.0.204",
+        "routerMac": "00:00:00:00:02:04",
+        "isEdgeRouter": true,
+        "adjacencySids": []
+      }
     },
-    "ports" : {
-        "device:bmv2:s204/3" : {
-            "interfaces" : [
-                {
-                    "name": "if1",
-                    "ips" : [ "10.0.100.254/24" ],
-                    "vlan-untagged": 100
-                }
-            ]
-        },
-        "device:bmv2:s204/4" : {
-            "interfaces" : [
-                {
-                    "name": "if2",
-                    "ips" : [ "10.0.100.254/24" ],
-                    "vlan-tagged": [100]
-                }
-            ]
-        },
-        "device:bmv2:s205/3" : {
-            "interfaces" : [
-                {
-                    "name": "if3",
-                    "ips" : [ "10.0.200.254/24" ],
-                    "vlan-untagged": 200
-                }
-            ]
-        }
+    "device:bmv2:s205": {
+      "segmentrouting": {
+        "name": "s205",
+        "ipv4NodeSid": 205,
+        "ipv4Loopback": "192.168.0.205",
+        "routerMac": "00:00:00:00:02:05",
+        "isEdgeRouter": true,
+        "adjacencySids": []
+      }
+    },
+    "device:bmv2:s226": {
+      "segmentrouting": {
+        "name": "s226",
+        "ipv4NodeSid": 226,
+        "ipv4Loopback": "192.168.0.226",
+        "routerMac": "00:00:00:00:02:26",
+        "isEdgeRouter": false,
+        "adjacencySids": []
+      }
+    },
+    "device:bmv2:s227": {
+      "segmentrouting": {
+        "name": "s227",
+        "ipv4NodeSid": 227,
+        "ipv4Loopback": "192.168.0.227",
+        "routerMac": "00:00:00:00:02:27",
+        "isEdgeRouter": false,
+        "adjacencySids": []
+      }
     }
+  },
+  "ports": {
+    "device:bmv2:s204/3": {
+      "interfaces": [
+        {
+          "name": "if1",
+          "ips": [
+            "10.0.100.254/24"
+          ],
+          "vlan-untagged": 100
+        }
+      ]
+    },
+    "device:bmv2:s204/4": {
+      "interfaces": [
+        {
+          "name": "if2",
+          "ips": [
+            "10.0.100.254/24"
+          ],
+          "vlan-tagged": [
+            100
+          ]
+        }
+      ]
+    },
+    "device:bmv2:s205/3": {
+      "interfaces": [
+        {
+          "name": "if3",
+          "ips": [
+            "10.0.200.254/24"
+          ],
+          "vlan-untagged": 200
+        }
+      ]
+    }
+  }
 }
