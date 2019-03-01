@@ -1,14 +1,18 @@
-# TRELLIS+P4 Tutorial
+# Trellis+P4 Tutorial
 
-Welcome to the TRELLIS+P4 tutorial! The goal of this tutorial is to learn how to
+Welcome to the Trellis+P4 tutorial! The goal of this tutorial is to learn how to
 use Trellis to control a leaf-spine fabric of P4-capable devices using ONOS, and
 how you can use `fabric.p4` (the reference P4 program used by Trellis) to
 perform advanced packet processing such as VNF offloading.
 
+## Slides
+
+Tutorial slides can be downloaded at <http://bit.ly/trellis-p4-slides>
+
 ## Tutorial VM
 
 To complete the exercises, you will need to download and run the tutorial VM.
-Ask the instructors for information on how to obtain such VM.
+The instruction of downloading and setting up the tutorial VM can be found at <http://bit.ly/trellis-p4-vm-instructions>
 
 To run the VM you can use any modern virtualization system, although we
 recommend using VirtualBox. To download VirtualBox and import the VM use the
